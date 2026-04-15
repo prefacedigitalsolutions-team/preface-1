@@ -1,0 +1,313 @@
+/* Banner Section */
+#banner {
+  position: relative;
+  height: 100vh;
+  background: url('../images/photoshoot/photoshoot-banar-1.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Heading thoda niche rahe */
+  align-items: center;
+  padding-top: 50vh; /* Heading ko top se distance */
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Heading */
+#bannerHeading {
+  font-size: 2.7rem;
+  margin-bottom: 30px; /* Arrow ke liye thoda gap */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 1s ease;
+  color: rgb(214, 214, 214);
+}
+
+/* Down Arrow */
+#scrollArrow {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+/* Arrow Hover Effect */
+#scrollArrow:hover {
+  background-color: rgba(255,255,255,0.2);
+  transform: translateY(5px);
+}
+
+/* Arrow Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+
+
+/* Responsive CSS */
+@media (max-width: 1024px) {
+  #bannerHeading {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+  #scrollArrow {
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #bannerHeading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  #scrollArrow {
+    width: 45px;
+    height: 45px;
+    font-size: 2rem;
+  }
+  #banner {
+    padding-top: 15vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #bannerHeading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  #scrollArrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  #banner {
+    padding-top: 12vh;
+  }
+}
+
+
+
+
+/* intro secrtion start*/
+
+#nextSection {
+  min-height: 10vh;
+  background: linear-gradient(to right, #ffffff, #f8f9fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Content */
+#nextSection .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Paragraph */
+#nextSection p {
+  font-size: 1.3rem;
+  color: #444;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #nextSection p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+
+/* intro secrtion End*/
+
+
+
+
+
+
+
+/* photoshoot section start */
+
+.photosection {
+  padding: 50px 20px;
+  background: #f5f5f5;
+}
+
+/* GRID: 4 per row */
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* BOX */
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.6s ease;
+}
+
+/* Scroll animation */
+
+.img-box.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.img-box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* DOOR OVERLAY (Left + Right panels) */
+   
+.img-box::before,
+.img-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+/* Left door */
+.img-box::before {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+/* Right door */
+.img-box::after {
+  right: 0;
+  transform: translateX(100%);
+}
+
+/* Hover → doors close */
+.img-box:hover::before {
+  transform: translateX(0);
+}
+
+.img-box:hover::after {
+  transform: translateX(0);
+}
+
+/* OPTIONAL: hover zoom effect */
+.img-box:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 5;   
+  opacity: 0;
+  transition: 0.4s ease;
+  pointer-events: none;
+}
+
+.overlay-content h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  max-width: 90%;
+  letter-spacing: 1px;
+  
+}
+
+.overlay-content p {
+  font-size: 18px;
+  
+}
+
+
+/* jab hover ho tab text show ho */
+.img-box:hover .overlay-content {
+  opacity: 1;
+}
+
+
+.bullet-text::before {
+  content: "•";
+  color: #00eeff;
+  font-size: 38px;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;  
+}
+
+
+/* Tablet (992px se niche) → 3 columns */
+@media (max-width: 992px) {
+  .grid-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small Tablet (768px se niche) → 2 columns */
+@media (max-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-box img {
+    height: 200px;
+  }
+}
+
+/* Mobile (480px se niche) → 1 column */
+@media (max-width: 480px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .img-box img {
+    height: 320px;
+  }
+}
+
+/* Extra small devices (350px se niche) */
+@media (max-width: 350px) {
+  .img-box img {
+    height: 250px;
+  }
+}
+
+
+
+
+
+
+
+
+
