@@ -54,48 +54,64 @@
 
 
 
-/* Responsive CSS */
-@media (max-width: 1024px) {
-  #bannerHeading {
-    font-size: 2.5rem;
-    margin-bottom: 25px;
+/* Tablet */
+@media (max-width: 992px) {
+  #banner {
+    height: 80vh;
+    padding-top: 40vh;
   }
+
+  #bannerHeading {
+    font-size: 2.2rem;
+  }
+
+  #scrollArrow {
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #banner {
+    height: 70vh;
+    padding-top: 35vh;
+  }
+
+  #bannerHeading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
   #scrollArrow {
     width: 50px;
     height: 50px;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
   }
 }
 
-@media (max-width: 768px) {
-  #bannerHeading {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  #scrollArrow {
-    width: 45px;
-    height: 45px;
-    font-size: 2rem;
-  }
-  #banner {
-    padding-top: 15vh;
-  }
-}
-
+/* Small Mobile */
 @media (max-width: 480px) {
-  #bannerHeading {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-  #scrollArrow {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-  }
   #banner {
-    padding-top: 12vh;
+    height: 34vh;
+    padding-top: 16vh;
+  }
+
+  #bannerHeading {
+    font-size: 1.1rem;
+    padding: 0 15px;
+    line-height: 1.9;
+    letter-spacing: 1px;
+  }
+
+  #scrollArrow {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
   }
 }
+
 
 
 
