@@ -287,7 +287,7 @@ left:-120px;
 .catalog-bottom-container {
     display: grid;
     grid-template-columns: 55% 45%;
-    height: 750px;
+    height: 800px;
 }
 
 /* LEFT CONTENT */
