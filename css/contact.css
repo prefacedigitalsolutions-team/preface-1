@@ -582,7 +582,7 @@
   display: flex;
   width: 100%;
   padding: 40px 20px; 
-  background: #949494;
+  background: #191919;
   justify-content: center;
   margin-bottom: 80px;
 }
@@ -592,7 +592,7 @@
   display: flex;
   width: 100%;
   max-width: 1050px;
-  background: #c0bebe;
+  background: #191919;
   border: 2px solid #0047b9;
 
   border-radius: 8px;
@@ -600,12 +600,24 @@
 
 }
 
+
+/* left heading company name*/
+.contact-right h4 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  
+}
+
+
+
 /* LEFT */
 .contact-left {
   width: 30%;
   padding: 20px; 
   border-right: 2px solid #ffffff;
-  background: #949494;
+  background: #191919;
 
   display: flex;
   flex-direction: column;

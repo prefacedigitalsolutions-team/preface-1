@@ -309,7 +309,7 @@ left:-120px;
 }
 
 .catalog-heading {
-    font-size: 34px;
+    font-size: 54px;
     font-weight: 500;
     line-height: 1.4;
     color: #fff;
@@ -317,6 +317,7 @@ left:-120px;
     border-bottom: 2px solid #ff6600;
     padding-bottom: 6px;
     margin: 10px 0 20px;
+  text-transform: none
 }
 
 .catalog-footer {
@@ -429,6 +430,10 @@ left:-120px;
 .catalog-image-box:hover::after {
     opacity: 1;
 }
+
+
+
+
 
 
 /* galary image zoom section start*/
@@ -628,7 +633,7 @@ left:-120px;
     margin: 0 auto;
 }
 
-/* ===== HEADER ===== */
+/* header */
 .section-header {
     grid-column: 1 / -1;
     text-align: center;
@@ -751,7 +756,7 @@ left:-120px;
     }
 
     .hover-box {
-        height: 360px;   /* balanced (cut bhi kam, animation bhi safe) */
+        height: 360px;   
     }
 
     .section-header h2 {
