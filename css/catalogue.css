@@ -618,23 +618,12 @@ left:-120px;
 
 
 /* image other section start*/
-/* ===== GLOBAL FIX (SCROLL ISSUE FIX) ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html, body {
-    overflow-x: hidden;
-}
-
-/* ===== SECTION ===== */
 .hover-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 40px 20px 60px;
+    padding: 50px 65px 60px;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -664,7 +653,7 @@ html, body {
 .hover-box {
     position: relative;
     overflow: hidden;
-    height: 400px;
+    height: 410px;
     cursor: pointer;
     margin-bottom: 20px;
 }
