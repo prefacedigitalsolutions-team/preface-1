@@ -25,10 +25,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 140px;  /* thoda niche tak le gaye */
+  height: 140px;  
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.4),   /* top aur dark */
+    rgba(0, 0, 0, 0.4), 
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.15),
