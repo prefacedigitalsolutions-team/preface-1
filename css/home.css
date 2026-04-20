@@ -35,7 +35,7 @@ html.no-scroll {
 
 
 #language-switcher:hover {
-  background: #0f87d1;
+  background: #046099;
   transform: translateY(-2px);
 }
 
@@ -255,14 +255,7 @@ html.no-scroll {
     transform: none;  
     position: static; 
   }
-
- 
-
-
 }
-
-
-
 
 
 /* banar section heading End*/
@@ -270,7 +263,10 @@ html.no-scroll {
 
 
 
+
+
 /* Navbar main wrapper */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -370,7 +366,6 @@ html.no-scroll {
 }
 
 
-/* --- LARGE SCREENS (1500px to 2000px) --- */
 
 @media (min-width: 1500px) and (max-width: 2000px) {
   
@@ -423,33 +418,12 @@ html.no-scroll {
 
 
 
-/* rounder circle start*/
-
-@media (max-width: 767px) {
-
-  .hexagon-wrapper {
-    transform: scale(0.6); 
-  }
-
-  .hexagon {
-    width: 220px;  
-    height: 220px;
-  }
-
-  .hexagon-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-}
-
-
 
 
 /*Intro section start */
 
 .intro {
+ 
   max-width: 800px;
   margin: 150px auto 50px 80px;
   padding: 0 1em;
@@ -527,118 +501,26 @@ html.no-scroll {
 
 
 
+/* rounder circle start*/
 
+@media (max-width: 767px) {
 
- /* box section start */
-
-.three-boxes {
-  display: flex;
-  justify-content: center;
-  gap: 1.5em;
-  max-width: 1000px;
-  margin: 150px auto 350px auto; 
-  flex-wrap: wrap;
-}
-
-
-.box {
-  background-color: #0f0f0f;
-  padding: 0; /* image will handle spacing */
-  text-align: center;
-  border-radius: 10px;
-  border: 0.5px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  box-sizing: border-box;
-  color: #fff;
-  min-height: 220px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* image stays inside */
-}
-
-
-.box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-
-.side-box {
-  flex: 1 1 25%;
-  min-width: 180px;
-}
-
-.middle-box {
-  flex: 1 1 40%;
-  min-width: 250px;
-}
-
-.box-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 10px;
-}
-
-/* Initial hidden state for boxes */
-.three-boxes .box {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-  will-change: opacity, transform;
-}
-
-/* When box comes into view */
-.three-boxes .box.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
- 
-/* Staggered delay for sequential appearance */
-.three-boxes .box:nth-child(1).show { transition-delay: 0.2s; }
-.three-boxes .box:nth-child(2).show { transition-delay: 0.4s; }
-.three-boxes .box:nth-child(3).show { transition-delay: 0.6s; }
-
-
-@media (max-width: 768px) {
-  .side-box, .middle-box {
-    flex: 1 1 100%;
-    margin-bottom: 1.5em;
-  }
-}
-
-
-
-@media (max-width: 480px) {
-
-  .three-boxes {
-    margin: 80px auto;
-    gap: 1em;
-    flex-direction: column;
-    align-items: center;
+  .hexagon-wrapper {
+    transform: scale(0.6); 
   }
 
-  .side-box,
-  .middle-box {
-    flex: none;
-    width: 70%;
-    margin-bottom: 1.2em;
+  .hexagon {
+    width: 220px;  
+    height: 220px;
   }
 
-  .box {
-    min-height: auto;
-  }
-
-  .box-image {
-    height: auto;
+  .hexagon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
 }
-
-/* box section End*/
-
-
 
 
 
@@ -1001,15 +883,15 @@ html.no-scroll {
   .container {
     display: flex;
     flex-direction: column;
-    align-items: center;   /* 👈 ye important hai */
+    align-items: center;   
   }
 
   .image-box {
     width: 55%;
     max-width: 200px;
 
-    margin: 0 auto;        /* 👈 ye center karega */
-    display: block;        /* 👈 ensure */
+    margin: 0 auto;        
+    display: block;        
   }
 
   .image-box img {
